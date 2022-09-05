@@ -1,0 +1,111 @@
+body{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.calculator {
+    border-radius: 25px;
+    min-width:320px;
+    min-height:535px;
+    max-width:320px;
+    max-height:535px;
+    background-color: black;
+    color: white; 
+    position: relative; 
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#screen {
+    display: flex;
+    border-radius: 5px; 
+    text-align: right;
+    color: darkslategrey;
+    min-width: 80%;
+    max-width: 80%;
+    min-height: 6.2rem;
+    max-height: 6.2rem;
+    background-color: azure;
+    margin: 30px auto;  
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#equation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 18px;
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 3.1rem;
+    max-height: 3.1rem; 
+}
+
+#result {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 36px;
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 3.1rem;
+    max-height: 3.1rem;  
+}
+
+.buttons {
+    display: grid;  
+    grid-template-columns: repeat(4, 1fr)/*1fr 1fr 1fr 1fr*/;  
+    width: 90%;   
+    height: 50%;
+    gap: 8px;  
+}
+
+.button {  
+    height: 64.5px;
+    transition: filter 0.3s;
+    cursor: pointer; 
+    border-radius: 50%;
+    font-size: 32px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    opacity: 0.4;
+} 
+
+.button:active {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+}
+
+.lightgray {
+    background-color: lightgray;
+    color: black;
+} 
+
+.darkgray {
+    background-color: rgb(95, 93, 93);
+} 
+
+.orange {
+    background-color: orange;
+}
+
+.orange:active {
+    box-shadow: 0 5px 15px rgba(255, 165, 0, 0.4);
+}
+
+.long { 
+    border-radius: 40px;
+    grid-column: 1/3;
+}
