@@ -36,10 +36,10 @@ body{
     max-height: 10.8rem; 
     margin: 30px 0 0 0;  
     flex-wrap: wrap;
-    justify-content: flex-end;  
+    justify-content: flex-end;   
 }
 
-#equation {
+.equation {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -50,7 +50,7 @@ body{
     max-height: 3.1rem; 
 }
 
-#result {
+.result {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -88,12 +88,12 @@ body{
 }
 
 .lightgray {
-    background-color: lightgray;
+    background-color: rgb(161, 161, 161);
     color: black;
 } 
 
 .darkgray {
-    background-color: rgb(95, 93, 93);
+    background-color: rgb(49, 49, 49);
 } 
 
 .orange {
