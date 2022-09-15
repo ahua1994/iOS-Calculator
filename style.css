@@ -9,6 +9,7 @@ body{
     width: 100vw;
     font-family: "Helvetica Neue", sans-serif;
     background-color:gray;
+    user-select: none;
 }
 
 .calculator {
@@ -110,7 +111,9 @@ body{
 }
 
 @media screen and (max-width: 460px){
-    body { 
-        justify-content: flex-end;
-    } 
+    body {   
+        justify-content: unset;
+        height: auto;
+        width: auto;
+    }  
 }
