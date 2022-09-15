@@ -111,6 +111,6 @@ body{
 
 @media screen and (max-width: 460px){
     body { 
-        justify-content: unset;
+        justify-content: flex-end;
     } 
 }
