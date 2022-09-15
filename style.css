@@ -108,3 +108,9 @@ body{
     border-radius: 40px;
     grid-column: 1/3;
 }
+
+@media screen and (max-width: 460px){
+    body { 
+        justify-content: unset;
+    } 
+}

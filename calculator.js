@@ -4,7 +4,7 @@ let buttons = document.querySelector(".buttons");
 
 let operands = ["+", "-", "x", "÷", "/", "*"];
 let currentEquation = [];
-let current = [];
+let current = [0];
 
 buttons.addEventListener("click", (e) => {
     let btnType = e.target.classList;
@@ -40,7 +40,7 @@ buttons.addEventListener("click", (e) => {
         equation.textContent = "";
         result.textContent = "";
         currentEquation = [];
-        current = [];
+        current = [0];
     } else if (btnType.contains("sign") && !current[0] == 0) {
         current[0] = parseInt(current[0]) * -1;
     } else if (btnType.contains("equals")) {
